@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Lorem, ipsum.</h1>
+    <img src="" alt="">
+    <h1>Lorem, ipsum dolor.</h1>
+    <img src="" alt="" id="abcd">
+    <script>
+        //js 에서 가장 핵심적으로 이용되는 객체는 document 객체다.
+
+        //querySelector : '선택자'를 이용해서 태그를 선택하는 함수
+        //getElementBy~~~ : '아이디' 혹은 '클래스' 혹은 '태그명'등으로
+        //태그를 선택하는 함수
+
+        // 선택자를 알아야 잘 쓸 수 있는 함수
+        let title = document.querySelector('#title')
+        title.style.color = 'blue'
+
+        //getElementById : 선택자가 아니라 그냥 아이디만 넣으면 됨
+        let img = document.getElementById('abcd')
+        //id가 abcd인 태그의 src 속성에 아래 url을 붙인 것
+        img.src = 'https://th.bing.com/th/id/OIG.utrN5azyRUQ3kspzm1BM?pid=ImgGn'
+
+
+        let h1list = document.querySelectorAll('h1')
+        for(let item of h1list)
+            item.style.background='yellow'
+
+            h1list[1].textContent = prompt('당신의 이름은?')
+
+            let imglist = document.getElementsByTagName('img')
+            imglist[0].src = 'https://th.bing.com/th/id/OIG.KW0y02Qw18I41L_bsOyz?pid=ImgGn'
+    </script>
+</body>
+</html>
