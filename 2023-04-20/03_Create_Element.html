@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{color: pink; background-color: black;}
+    </style>
+</head>
+<body>
+    <script>
+        let h1Tag = document.createElement('h1')
+        h1Tag.textContent = '안녕'
+        h1Tag.setAttribute('class', 'red')
+        document.body.appendChild(h1Tag)
+
+        let image = document.createElement('img')
+        image.src = 'https://shop-phinf.pstatic.net/20230403_164/1680514636292Ta9BG_JPEG/81650534971749920_463005276.jpg?type=f296_296'
+        document.body.appendChild(image)
+    </script>
+</body>
+</html>
